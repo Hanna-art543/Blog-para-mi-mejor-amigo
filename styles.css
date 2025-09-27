@@ -1,0 +1,147 @@
+/* RESET BÁSICO  */
+/* Esto limpia márgenes y paddings predeterminados del navegador */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ESTILO GENERAL */
+body {
+  font-family: Arial, Helvetica, sans-serif; /* Fuente general */
+  background-color: #f7f9fc; /* Fondo suave */
+  color: #333; /* Texto gris oscuro */
+  line-height: 1.6; /* Espaciado entre líneas */
+  padding: 20px;
+}
+
+/* ENCABEZADO */
+header {
+  background: #4a90e2; /* Azul bonito */
+  color: white; /* Texto blanco */
+  padding: 20px;
+  text-align: center; /* Centra el título y párrafo */
+  border-radius: 10px;
+}
+
+header h1 {
+  font-size: 2.2rem;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+/* NAVEGACIÓN */
+nav ul {
+  list-style: none; /* Quita las viñetas */
+  display: flex; /* Los pone en fila */
+  justify-content: center; /* Centra los enlaces */
+  gap: 20px; /* Espaciado entre enlaces */
+  margin-top: 15px;
+}
+
+nav a {
+  text-decoration: none; /* Quita subrayado */
+  color: white; /* Color texto */
+  font-weight: bold;
+  transition: color 0.3s ease; /* Animación suave */
+}
+
+nav a:hover {
+  color: yellow; /* Resalta al pasar el mouse */
+}
+
+/* CONTENIDO PRINCIPAL */
+main {
+  margin: 20px auto;
+  max-width: 800px; /* Ancho máximo del blog */
+}
+
+/* Cada artículo tiene su propio "bloque" */
+article {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* Sombra ligera */
+}
+
+article h2 {
+  color: #4a90e2;
+  margin-bottom: 10px;
+}
+
+/* ====== SECCIONES ====== */
+section {
+  margin-bottom: 15px;
+}
+
+/* Resalta texto con <mark> */
+mark {
+  background: yellow;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+/* Fecha con <time> */
+time {
+  font-size: 0.9rem;
+  color: gray;
+}
+
+/* FIGURAS E IMÁGENES */
+figure {
+  text-align: center;
+  margin: 15px 0;
+}
+
+figure img {
+  max-width: 100%; /* Imagen nunca más ancha que el contenedor */
+  border-radius: 10px;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 5px;
+}
+
+/* DETAILS (sorpresas colapsables)   */
+details {
+  background: #f0f4ff;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+summary {
+  font-weight: bold;
+  color: #4a90e2;
+  margin-bottom: 5px;
+}
+
+/* ASIDE */
+aside {
+  background: #eaf7ea; /* Verde claro */
+  padding: 10px;
+  border-left: 5px solid #4CAF50; /* Barra decorativa */
+  margin-top: 15px;
+  border-radius: 8px;
+}
+
+/* PIE DE PÁGINA */
+footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  background: #4a90e2;
+  color: white;
+  border-radius: 10px;
+}
+
+footer address {
+  font-style: normal; /* Quita el estilo cursivo predeterminado */
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
